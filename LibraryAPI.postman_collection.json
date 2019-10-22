@@ -1,0 +1,3163 @@
+{
+	"info": {
+		"_postman_id": "14e95804-0ff3-41f7-a1f6-3526dca0011f",
+		"name": "LibraryAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Authors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Author",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Author (unexisting)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/a8d15573-ec65-4f48-97d2-2e7c0a726c33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"a8d15573-ec65-4f48-97d2-2e7c0a726c33"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Books for Author",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Books for Author (unexisting Author)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/b29e03b5-ba28-4489-8834-689de28af370/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"b29e03b5-ba28-4489-8834-689de28af370",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Book for Author",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/bc4c35c3-3857-4250-9449-155fcf5109ec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"bc4c35c3-3857-4250-9449-155fcf5109ec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Book for Author (unexisting Author)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/b29e03b5-ba28-4489-8834-689de28af370/books/bc4c35c3-3857-4250-9449-155fcf5109ec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"b29e03b5-ba28-4489-8834-689de28af370",
+						"books",
+						"bc4c35c3-3857-4250-9449-155fcf5109ec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Book for Author (unexisting Book)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/8afc4f43-3d02-429b-90c7-1cabe201bf7a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"8afc4f43-3d02-429b-90c7-1cabe201bf7a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Author (Accept: application/json)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Author (Accept: application/xml)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Author",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\" : \"James\",\n\t\"lastName\" : \"Ellroy\",\n\t\"dateOfBirth\" : \"1948-03-04T00:00:00\",\n\t\"genre\": \"Thriller\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Author (invalid body)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\" : \"James\",\n\t\"lastName\" : \"Ellroy\",\n\t\"dateOfBirth\" : \"invalid value for DateTimeOffset\",\n\t\"genre\": \"Thriller\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Book for Author",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"The Restaurant at the End of the Universe\",\n\t\"description\" : \"The sequel to The Hitchhiker's Guide to the Galaxy\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/f74d6899-9ed2-4137-9876-66b070553f8f/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"f74d6899-9ed2-4137-9876-66b070553f8f",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Book for Author (unexisting Author)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"The Restaurant at the End of the Universe\",\n\t\"description\" : \"The sequel to The Hitchhiker's Guide to the Galaxy\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/0d75ab75-0028-40c3-8019-1188fe7e790a/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"0d75ab75-0028-40c3-8019-1188fe7e790a",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Author with Books",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\" : \"James\",\n\t\"lastName\" : \"Ellroy\",\n\t\"dateOfBirth\" : \"1948-03-04T00:00:00\",\n\t\"genre\": \"Thriller\",\n\t\"books\": [\n\t\t{\n\t\t\t\"title\" : \"American Tabloid\",\n\t\t  \t\"description\" : \"First book in the Underworld USA trilogy\"\n\t\t},\n\t\t{\n\t\t\t\"title\": \"The Cold Six Thousand\",\n\t\t\t\"description\": \"Second book in the Underworld USA trilogy\"\n\t\t}\n\t\t]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Author collection",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n\t\"firstName\" : \"James\",\n\t\"lastName\" : \"Ellroy\",\n\t\"dateOfBirth\" : \"1948-03-04T00:00:00\",\n\t\"genre\": \"Thriller\"\n},\n{\n\t\"firstName\" : \"Jonathan\",\n\t\"lastName\" : \"Franzen\",\n\t\"dateOfBirth\" : \"1959-08-17T00:00:00\",\n\t\"genre\": \"Drama\"\n}]"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authorcollections",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authorcollections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Author (single, unexisting - should fail with 404)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\" : \"James\",\n\t\"lastName\" : \"Ellroy\",\n\t\"dateOfBirth\" : \"1948-03-04T00:00:00\",\n\t\"genre\": \"Thriller\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/25141d83-4584-4487-a306-0441695d8e24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"25141d83-4584-4487-a306-0441695d8e24"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Author (single, existing - should fail with 409)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\" : \"James\",\n\t\"lastName\" : \"Ellroy\",\n\t\"dateOfBirth\" : \"1948-03-04T00:00:00\",\n\t\"genre\": \"Thriller\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/f74d6899-9ed2-4137-9876-66b070553f8f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"f74d6899-9ed2-4137-9876-66b070553f8f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Author (XML input)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<AuthorForCreationDto xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://schemas.datacontract.org/2004/07/Library.API.Models\">\r\n        <DateOfBirth xmlns:d3p1=\"http://schemas.datacontract.org/2004/07/System\">\r\n            <d3p1:DateTime>1948-03-03T00:00:00Z</d3p1:DateTime>\r\n            <d3p1:OffsetMinutes>0</d3p1:OffsetMinutes>\r\n        </DateOfBirth>\r\n        <FirstName>James</FirstName>\r\n        <Genre>Thriller</Genre>\r\n        <LastName>Ellroy</LastName>\r\n</AuthorForCreationDto>\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Author (XML input, XML output)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml"
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<AuthorForCreationDto xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://schemas.datacontract.org/2004/07/Library.API.Models\">\r\n        <DateOfBirth xmlns:d3p1=\"http://schemas.datacontract.org/2004/07/System\">\r\n            <d3p1:DateTime>1948-03-03T00:00:00Z</d3p1:DateTime>\r\n            <d3p1:OffsetMinutes>0</d3p1:OffsetMinutes>\r\n        </DateOfBirth>\r\n        <FirstName>James</FirstName>\r\n        <Genre>Thriller</Genre>\r\n        <LastName>Ellroy</LastName>\r\n</AuthorForCreationDto>"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Book for Author",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/25320c5e-f58a-4b1f-b63a-8ee07a840bdf/books/70a1f9b9-0a37-4c1a-99b1-c7709fc64167",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"25320c5e-f58a-4b1f-b63a-8ee07a840bdf",
+						"books",
+						"70a1f9b9-0a37-4c1a-99b1-c7709fc64167"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Book for Author (unexisting Book)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/25320c5e-f58a-4b1f-b63a-8ee07a840bdf/books/3f946dbe-edf3-4c44-baef-b683bc355a0f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"25320c5e-f58a-4b1f-b63a-8ee07a840bdf",
+						"books",
+						"3f946dbe-edf3-4c44-baef-b683bc355a0f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Book for Author (unexisting Author)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/787f6625-6048-43d7-b64e-bf3d02f0132d/books/70a1f9b9-0a37-4c1a-99b1-c7709fc64167",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"787f6625-6048-43d7-b64e-bf3d02f0132d",
+						"books",
+						"70a1f9b9-0a37-4c1a-99b1-c7709fc64167"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Author",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/25320c5e-f58a-4b1f-b63a-8ee07a840bdf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"25320c5e-f58a-4b1f-b63a-8ee07a840bdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Book for Author",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"A Game of Thrones - Updated\",\n  \"description\": \"Description - Updated\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/447eb762-95e9-4c31-95e1-b20053fbe215",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"447eb762-95e9-4c31-95e1-b20053fbe215"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Book for Author (with ids)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"A Game of Thrones - Test with both ids\",\n  \"description\": \"Description - Test with both ids\",\n  \"id\": \"e57b605f-8b3c-4089-b672-6ce9e6d6c23f\",\n  \"authorId\": \"f74d6899-9ed2-4137-9876-66b070553f8f\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/447eb762-95e9-4c31-95e1-b20053fbe215",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"447eb762-95e9-4c31-95e1-b20053fbe215"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Book for Author (no description)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"A Game of Thrones - Updated\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/447eb762-95e9-4c31-95e1-b20053fbe215",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"447eb762-95e9-4c31-95e1-b20053fbe215"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Book for Author (unexisting author)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"The Winds of Winter\",\n  \"description\": \"Forthcoming 6th novel in A Song of Ice and Fire.\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/62e81210-2d6b-4213-9621-ec2f321c1651/books/bc4c35c3-3857-4250-9449-155fcf5109ec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"62e81210-2d6b-4213-9621-ec2f321c1651",
+						"books",
+						"bc4c35c3-3857-4250-9449-155fcf5109ec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Book for Author (unexisting book)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"The Winds of Winter\",\n  \"description\": \"Forthcoming 6th novel in A Song of Ice and Fire.\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/75bf303e-6dc4-4b00-81fd-f896a6379f5f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"75bf303e-6dc4-4b00-81fd-f896a6379f5f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Book for Author",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n      \"op\": \"replace\",\n      \"path\": \"/title\",\n      \"value\": \"A Game of Thrones - Updated\"\n    }\n]"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/447eb762-95e9-4c31-95e1-b20053fbe215",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"447eb762-95e9-4c31-95e1-b20053fbe215"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Book for Author (multiple)",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n      \"op\": \"replace\",\n      \"path\": \"/title\",\n      \"value\": \"A Game of Thrones - Updated again\"\n    },\n    {\n      \"op\": \"replace\",\n      \"path\": \"/description\",\n      \"value\": \"Description - Updated\"\n    }\n]"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/447eb762-95e9-4c31-95e1-b20053fbe215",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"447eb762-95e9-4c31-95e1-b20053fbe215"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Book for Author (remove)",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n      \"op\": \"remove\",\n      \"path\": \"/description\"\n    }\n]"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/447eb762-95e9-4c31-95e1-b20053fbe215",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"447eb762-95e9-4c31-95e1-b20053fbe215"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Book for Author (copy and add)",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n      \"op\": \"add\",\n      \"path\": \"/description\",\n      \"value\": \"new description\"\n    },\n    {\n      \"op\": \"copy\",\n      \"from\": \"/description\",\n      \"path\": \"/title\"\n    }\n]"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/447eb762-95e9-4c31-95e1-b20053fbe215",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"447eb762-95e9-4c31-95e1-b20053fbe215"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Book for Author (unexisting author)",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n      \"op\": \"replace\",\n      \"path\": \"/title\",\n      \"value\": \"A Game of Thrones - Updated\"\n    }\n]"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/62e81210-2d6b-4213-9621-ec2f321c1651/books/447eb762-95e9-4c31-95e1-b20053fbe215",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"62e81210-2d6b-4213-9621-ec2f321c1651",
+						"books",
+						"447eb762-95e9-4c31-95e1-b20053fbe215"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Book for Author (unexisting book)",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n      \"op\": \"replace\",\n      \"path\": \"/title\",\n      \"value\": \"The Winds of Winter\"\n    },\n    {\n      \"op\": \"replace\",\n      \"path\": \"/description\",\n      \"value\": \"Description of The Winds of Winter\"\n    }\n]"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/75bf303e-6dc4-4b00-81fd-f896a6379f5f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"75bf303e-6dc4-4b00-81fd-f896a6379f5f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Book for Author (null values)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : null,\n\t\"description\" : null\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/f74d6899-9ed2-4137-9876-66b070553f8f/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"f74d6899-9ed2-4137-9876-66b070553f8f",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Book for Author (invalid values)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : null,\n\t\"description\" : \"Capstan gibbet poop deck smartly knave snow crow's nest tack Corsair doubloon. Dead men tell no tales Barbary Coast coxswain Arr gunwalls walk the plank tackle Gold Road yo-ho-ho lugger. Clipper lass sloop crack Jennys tea cup boatswain Pirate Round fire in the hole yard Gold Road weigh anchor. Draft measured fer yer chains boatswain fore lugsail heave down salmagundi pillage careen keel. Smartly warp run a rig grog dead men tell no tales lanyard loot bilge water coffer pink. Red ensign square-rigged ahoy gunwalls quarter knave doubloon handsomely shrouds reef sails. Belay brigantine galleon rigging nipper wherry lee parrel loaded to the gunwalls carouser. Jack Tar rope's end lee Corsair schooner barkadeer chantey rigging jack cable. No prey, no pay lee Chain Shot ye code of conduct tender Jack Tar topgallant piracy black jack. Hearties measured fer yer chains bowsprit port starboard Pieces of Eight Pirate Round pressgang black jack brig. Crimp salmagundi Brethren of the Coast poop deck coxswain quarterdeck black spot hogshead reef sails Yellow Jack. Brigantine piracy league Privateer run a shot across the bow rum lass Pirate Round Davy Jones' Locker ho. Arr yardarm walk the plank long boat hardtack gangplank bring a spring upon her cable scallywag port mizzen. Ahoy lateen sail Corsair gangplank careen warp rigging chase nipper gaff. Scallywag rutters plunder hail-shot fluke draught yo-ho-ho long clothes maroon reef sails.\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/f74d6899-9ed2-4137-9876-66b070553f8f/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"f74d6899-9ed2-4137-9876-66b070553f8f",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Book for Author (title == description)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\" : \"A new book\",\n  \"description\" : \"A new book\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/f74d6899-9ed2-4137-9876-66b070553f8f/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"f74d6899-9ed2-4137-9876-66b070553f8f",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Book for Author (long title == long description)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\" : \"Capstan gibbet poop deck smartly knave snow crow's nest tack Corsair doubloon. Dead men tell no tales Barbary Coast coxswain Arr gunwalls walk the plank tackle Gold Road yo-ho-ho lugger. Clipper lass sloop crack Jennys tea cup boatswain Pirate Round fire in the hole yard Gold Road weigh anchor. Draft measured fer yer chains boatswain fore lugsail heave down salmagundi pillage careen keel. Smartly warp run a rig grog dead men tell no tales lanyard loot bilge water coffer pink. Red ensign square-rigged ahoy gunwalls quarter knave doubloon handsomely shrouds reef sails. Belay brigantine galleon rigging nipper wherry lee parrel loaded to the gunwalls carouser. Jack Tar rope's end lee Corsair schooner barkadeer chantey rigging jack cable. No prey, no pay lee Chain Shot ye code of conduct tender Jack Tar topgallant piracy black jack. Hearties measured fer yer chains bowsprit port starboard Pieces of Eight Pirate Round pressgang black jack brig. Crimp salmagundi Brethren of the Coast poop deck coxswain quarterdeck black spot hogshead reef sails Yellow Jack. Brigantine piracy league Privateer run a shot across the bow rum lass Pirate Round Davy Jones' Locker ho. Arr yardarm walk the plank long boat hardtack gangplank bring a spring upon her cable scallywag port mizzen. Ahoy lateen sail Corsair gangplank careen warp rigging chase nipper gaff. Scallywag rutters plunder hail-shot fluke draught yo-ho-ho long clothes maroon reef sails.\",\n  \"description\" : \"Capstan gibbet poop deck smartly knave snow crow's nest tack Corsair doubloon. Dead men tell no tales Barbary Coast coxswain Arr gunwalls walk the plank tackle Gold Road yo-ho-ho lugger. Clipper lass sloop crack Jennys tea cup boatswain Pirate Round fire in the hole yard Gold Road weigh anchor. Draft measured fer yer chains boatswain fore lugsail heave down salmagundi pillage careen keel. Smartly warp run a rig grog dead men tell no tales lanyard loot bilge water coffer pink. Red ensign square-rigged ahoy gunwalls quarter knave doubloon handsomely shrouds reef sails. Belay brigantine galleon rigging nipper wherry lee parrel loaded to the gunwalls carouser. Jack Tar rope's end lee Corsair schooner barkadeer chantey rigging jack cable. No prey, no pay lee Chain Shot ye code of conduct tender Jack Tar topgallant piracy black jack. Hearties measured fer yer chains bowsprit port starboard Pieces of Eight Pirate Round pressgang black jack brig. Crimp salmagundi Brethren of the Coast poop deck coxswain quarterdeck black spot hogshead reef sails Yellow Jack. Brigantine piracy league Privateer run a shot across the bow rum lass Pirate Round Davy Jones' Locker ho. Arr yardarm walk the plank long boat hardtack gangplank bring a spring upon her cable scallywag port mizzen. Ahoy lateen sail Corsair gangplank careen warp rigging chase nipper gaff. Scallywag rutters plunder hail-shot fluke draught yo-ho-ho long clothes maroon reef sails.\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/f74d6899-9ed2-4137-9876-66b070553f8f/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"f74d6899-9ed2-4137-9876-66b070553f8f",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Book for Author (invalid values)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": null,\n  \"description\": \"Capstan gibbet poop deck smartly knave snow crow's nest tack Corsair doubloon. Dead men tell no tales Barbary Coast coxswain Arr gunwalls walk the plank tackle Gold Road yo-ho-ho lugger. Clipper lass sloop crack Jennys tea cup boatswain Pirate Round fire in the hole yard Gold Road weigh anchor. Draft measured fer yer chains boatswain fore lugsail heave down salmagundi pillage careen keel. Smartly warp run a rig grog dead men tell no tales lanyard loot bilge water coffer pink. Red ensign square-rigged ahoy gunwalls quarter knave doubloon handsomely shrouds reef sails. Belay brigantine galleon rigging nipper wherry lee parrel loaded to the gunwalls carouser. Jack Tar rope's end lee Corsair schooner barkadeer chantey rigging jack cable. No prey, no pay lee Chain Shot ye code of conduct tender Jack Tar topgallant piracy black jack. Hearties measured fer yer chains bowsprit port starboard Pieces of Eight Pirate Round pressgang black jack brig. Crimp salmagundi Brethren of the Coast poop deck coxswain quarterdeck black spot hogshead reef sails Yellow Jack. Brigantine piracy league Privateer run a shot across the bow rum lass Pirate Round Davy Jones' Locker ho. Arr yardarm walk the plank long boat hardtack gangplank bring a spring upon her cable scallywag port mizzen. Ahoy lateen sail Corsair gangplank careen warp rigging chase nipper gaff. Scallywag rutters plunder hail-shot fluke draught yo-ho-ho long clothes maroon reef sails.\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/447eb762-95e9-4c31-95e1-b20053fbe215",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"447eb762-95e9-4c31-95e1-b20053fbe215"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Book for Author (null description)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"A Game of Thrones - Updated\",\n  \"description\": null\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/447eb762-95e9-4c31-95e1-b20053fbe215",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"447eb762-95e9-4c31-95e1-b20053fbe215"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Book for Author (null title == null description)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": null,\n  \"description\": null\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/447eb762-95e9-4c31-95e1-b20053fbe215",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"447eb762-95e9-4c31-95e1-b20053fbe215"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Book for Author (remove unexisting property)",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n      \"op\": \"remove\",\n      \"path\": \"/thisdoesnotexist\"\n    }\n]"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/447eb762-95e9-4c31-95e1-b20053fbe215",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"447eb762-95e9-4c31-95e1-b20053fbe215"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Book for Author (remove description)",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n      \"op\": \"remove\",\n      \"path\": \"/description\"\n    }\n]"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/447eb762-95e9-4c31-95e1-b20053fbe215",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"447eb762-95e9-4c31-95e1-b20053fbe215"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Book for Author (UPSERT - invalid patch document)",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n      \"op\": \"remove\",\n      \"path\": \"/thisdoesnotexist\" \n    }\n]"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/75bf303e-6dc4-4b00-81fd-f896a6379f5f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"75bf303e-6dc4-4b00-81fd-f896a6379f5f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Book for Author (UPSERT - valid patch document, no title)",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n      \"op\": \"add\",\n      \"path\": \"/description\",\n      \"value\": \"The Winds of Winter - Description\"\n    }\n]"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/75bf303e-6dc4-4b00-81fd-f896a6379f5f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"75bf303e-6dc4-4b00-81fd-f896a6379f5f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Book for Author",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/25320c5e-f58a-4b1f-b63a-8ee07a840bdf/books/70a1f9b9-0a37-4c1a-99b1-c7709fc64167",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"25320c5e-f58a-4b1f-b63a-8ee07a840bdf",
+						"books",
+						"70a1f9b9-0a37-4c1a-99b1-c7709fc64167"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (pageNumber = 1, pageSize = 5)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?pageNumber=1&pageSize=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "pageNumber",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (pageNumber = 1, pageSize = 100)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?pageNumber=1&pageSize=100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "pageNumber",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (pageNumber = 2, pageSize = 5)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?pageNumber=2&pageSize=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "pageNumber",
+							"value": "2"
+						},
+						{
+							"key": "pageSize",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (genre = Fantasy)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?genre=Fantasy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "genre",
+							"value": "Fantasy"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (genre = Fantasy, pageNumber = 2, pageSize = 2)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?genre=Fantasy&pageNumber=2&pageSize=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "genre",
+							"value": "Fantasy"
+						},
+						{
+							"key": "pageNumber",
+							"value": "2"
+						},
+						{
+							"key": "pageSize",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (searchQuery = a)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?searchQuery=a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "searchQuery",
+							"value": "a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (searchQuery = a, genre = Fantasy)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?searchQuery=a&genre=Fantasy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "searchQuery",
+							"value": "a"
+						},
+						{
+							"key": "genre",
+							"value": "Fantasy"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (searchQuery = a, genre = Fantasy, pageNumber = 2, pageSize = 2)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?searchQuery=a&genre=Fantasy&pageNumber=2&pageSize=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "searchQuery",
+							"value": "a"
+						},
+						{
+							"key": "genre",
+							"value": "Fantasy"
+						},
+						{
+							"key": "pageNumber",
+							"value": "2"
+						},
+						{
+							"key": "pageSize",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (orderBy = name)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?orderBy=name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "orderBy",
+							"value": "name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (orderBy = name desc)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?orderBy=name desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "orderBy",
+							"value": "name desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (orderBy = name desc, pageNumber = 2, pageSize = 10)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?orderBy=name desc&pageNumber=2&pageSize=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "orderBy",
+							"value": "name desc"
+						},
+						{
+							"key": "pageNumber",
+							"value": "2"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (orderBy = genre)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?orderBy=genre",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "orderBy",
+							"value": "genre"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (orderBy = genre desc)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?orderBy=genre desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "orderBy",
+							"value": "genre desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (orderBy = age, genre desc)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?orderBy=age, genre desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "orderBy",
+							"value": "age, genre desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (orderBy = dateofbirth) (should fail)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?orderBy=dateofbirth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "orderBy",
+							"value": "dateofbirth"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (orderBy = name, searchQuery = a, genre = Fantasy, pageNumber = 1, pageSize = 2)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?orderBy=name&searchQuery=a&genre=Fantasy&pageNumber=1&pageSize=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "orderBy",
+							"value": "name"
+						},
+						{
+							"key": "searchQuery",
+							"value": "a"
+						},
+						{
+							"key": "genre",
+							"value": "Fantasy"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (fields = id)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?fields=id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (fields = id, name)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?fields=id,name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (fields = FirstName) (should fail)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?fields=FirstName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "FirstName"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (orderBy = name, searchQuery = a, genre = Fantasy, pageNumber = 1, pageSize = 2, fields = id, name)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?orderBy=name&searchQuery=a&genre=Fantasy&pageNumber=1&pageSize=2&fields=id,name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "orderBy",
+							"value": "name"
+						},
+						{
+							"key": "searchQuery",
+							"value": "a"
+						},
+						{
+							"key": "genre",
+							"value": "Fantasy"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "2"
+						},
+						{
+							"key": "fields",
+							"value": "id,name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Author (fields = id, name)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe?fields=id,name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Author (fields = FirstName) (should fail)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe?fields=FirstName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "FirstName"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Book for Author",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/bc4c35c3-3857-4250-9449-155fcf5109ec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"bc4c35c3-3857-4250-9449-155fcf5109ec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Book for Author",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"The Restaurant at the End of the Universe\",\n\t\"description\" : \"The sequel to The Hitchhiker's Guide to the Galaxy\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/f74d6899-9ed2-4137-9876-66b070553f8f/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"f74d6899-9ed2-4137-9876-66b070553f8f",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Books for Author",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Author",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Author (fields = id, name)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe?fields=id,name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Author",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\" : \"James\",\n\t\"lastName\" : \"Ellroy\",\n\t\"dateOfBirth\" : \"1948-03-04T00:00:00\",\n\t\"genre\": \"Thriller\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (orderBy = name, searchQuery = a, genre = Fantasy, pageNumber = 1, pageSize = 2, fields = id, name)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors?orderBy=name&searchQuery=a&genre=Fantasy&pageNumber=1&pageSize=2&fields=id,name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					],
+					"query": [
+						{
+							"key": "orderBy",
+							"value": "name"
+						},
+						{
+							"key": "searchQuery",
+							"value": "a"
+						},
+						{
+							"key": "genre",
+							"value": "Fantasy"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "2"
+						},
+						{
+							"key": "fields",
+							"value": "id,name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Author",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Author (with tests)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							" ",
+							"var jsonData = JSON.parse(responseBody);",
+							"var idMatches = jsonData.id === \"76053df4-6687-4353-8937-b45556748abe\";",
+							"",
+							"tests[\"Id matches returned id\"] = idMatches; "
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (with tests)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"X-Pagination is present\"] = postman.getResponseHeader(\"X-Pagination\");"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OPTIONS Authors",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HEAD Authors",
+			"request": {
+				"method": "HEAD",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (Accept = application/vnd.marvin.hateoas+json)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.marvin.hateoas+json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET root (Accept = application/vnd.marvin.hateoas+json)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.marvin.hateoas+json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Author",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\" : \"James\",\n\t\"lastName\" : \"Ellroy\",\n\t\"dateOfBirth\" : \"1948-03-04T00:00:00\",\n\t\"genre\": \"Thriller\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Author (application/vnd.marvin.author.full+json)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.marvin.author.full+json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\" : \"James\",\n\t\"lastName\" : \"Ellroy\",\n\t\"dateOfBirth\" : \"1948-03-04T00:00:00\",\n\t\"genre\": \"Thriller\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Author with Date of Death (application/vnd.marvin.authorwithdateofdeath.full+json)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.marvin.authorwithdateofdeath.full+json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\" : \"JD\",\n\t\"lastName\" : \"Salinger\",\n\t\"dateOfBirth\" : \"1919-01-01T00:00:00\",\n\t\"dateOfDeath\" : \"2010-01-17T00:00:00\",\n\t\"genre\": \"Drama\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Author with Date of Death (application/vnd.marvin.authorwithdateofdeath.full+xml)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.marvin.authorwithdateofdeath.full+xml"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<AuthorForCreationWithDateOfDeathDto xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://schemas.datacontract.org/2004/07/Library.API.Models\">\n        <DateOfBirth xmlns:d3p1=\"http://schemas.datacontract.org/2004/07/System\">\n            <d3p1:DateTime>1919-01-01T00:00:00Z</d3p1:DateTime>\n            <d3p1:OffsetMinutes>0</d3p1:OffsetMinutes>\n        </DateOfBirth>\n        <DateOfDeath xmlns:d3p1=\"http://schemas.datacontract.org/2004/07/System\">\n            <d3p1:DateTime>2010-01-17T00:00:00Z</d3p1:DateTime>\n            <d3p1:OffsetMinutes>0</d3p1:OffsetMinutes>\n        </DateOfDeath>\n        <FirstName>JD</FirstName>\n        <Genre>Drama</Genre>\n        <LastName>Salinger</LastName>\n</AuthorForCreationWithDateOfDeathDto>\n"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Book for Author",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/bc4c35c3-3857-4250-9449-155fcf5109ec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"bc4c35c3-3857-4250-9449-155fcf5109ec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Book for Author",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"The Winds of Winter - Updated\",\n  \"description\": \"Forthcoming 6th novel in A Song of Ice and Fire. - Updated\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/bc4c35c3-3857-4250-9449-155fcf5109ec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe",
+						"books",
+						"bc4c35c3-3857-4250-9449-155fcf5109ec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Author",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Author (with tests)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							" ",
+							"var jsonData = JSON.parse(responseBody);",
+							"var idMatches = jsonData.id === \"76053df4-6687-4353-8937-b45556748abe\";",
+							"",
+							"tests[\"Id matches returned id\"] = idMatches; "
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors",
+						"76053df4-6687-4353-8937-b45556748abe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authors (with tests)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"X-Pagination is present\"] = postman.getResponseHeader(\"X-Pagination\");"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OPTIONS Authors",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HEAD Authors",
+			"request": {
+				"method": "HEAD",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6058/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6058",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

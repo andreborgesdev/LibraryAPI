@@ -1,0 +1,14 @@
+C:\Users\Andre.Borges\source\repos\Library\src\Library.API\bin\Debug\netcoreapp2.0\web.config
+C:\Users\Andre.Borges\source\repos\Library\src\Library.API\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Users\Andre.Borges\source\repos\Library\src\Library.API\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
+C:\Users\Andre.Borges\source\repos\Library\src\Library.API\bin\Debug\netcoreapp2.0\Library.API.deps.json
+C:\Users\Andre.Borges\source\repos\Library\src\Library.API\bin\Debug\netcoreapp2.0\Library.API.runtimeconfig.json
+C:\Users\Andre.Borges\source\repos\Library\src\Library.API\bin\Debug\netcoreapp2.0\Library.API.runtimeconfig.dev.json
+C:\Users\Andre.Borges\source\repos\Library\src\Library.API\bin\Debug\netcoreapp2.0\Library.API.dll
+C:\Users\Andre.Borges\source\repos\Library\src\Library.API\bin\Debug\netcoreapp2.0\Library.API.pdb
+C:\Users\Andre.Borges\source\repos\Library\src\Library.API\obj\Debug\netcoreapp2.0\Library.API.csprojAssemblyReference.cache
+C:\Users\Andre.Borges\source\repos\Library\src\Library.API\obj\Debug\netcoreapp2.0\Library.API.AssemblyInfoInputs.cache
+C:\Users\Andre.Borges\source\repos\Library\src\Library.API\obj\Debug\netcoreapp2.0\Library.API.AssemblyInfo.cs
+C:\Users\Andre.Borges\source\repos\Library\src\Library.API\obj\Debug\netcoreapp2.0\Library.API.dll
+C:\Users\Andre.Borges\source\repos\Library\src\Library.API\obj\Debug\netcoreapp2.0\Library.API.pdb
+C:\Users\Andre.Borges\source\repos\Library\src\Library.API\bin\Debug\netcoreapp2.0\nlog.config
