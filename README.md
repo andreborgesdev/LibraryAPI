@@ -1,2 +1,1 @@
-"# LibraryAPI" 
 # LibraryAPI
